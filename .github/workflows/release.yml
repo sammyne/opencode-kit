@@ -1,0 +1,23 @@
+name: Release
+
+on:
+  push:
+    tags:
+      - "**"
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Package agents
+        run: tar -czf opencode-plan-then-build-${{ github.ref_name }}.tgz .opencode/agents
+
+      - name: Create release
+        uses: softprops/action-gh-release@v2
+        with:
+          files: opencode-plan-then-build-${{ github.ref_name }}.tgz
