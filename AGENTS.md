@@ -2,7 +2,7 @@
 
 ## 仓库说明
 
-本仓库是 OpenCode「先规划后编码」工作流的 agent 定义文件集合。没有应用代码，没有构建/测试/lint 命令。产出物是 `.opencode/agents/` 下的四个 agent 配置，设计为拷贝到其他项目中使用。
+本仓库是 OpenCode 工作流的 agent 和 skill 集合（opencode-kit）。没有应用代码，没有构建/测试/lint 命令。产出物是 `.opencode/agents/` 下的四个 agent 配置，设计为拷贝到其他项目中使用。
 
 ## 架构
 
