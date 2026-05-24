@@ -1,5 +1,7 @@
 opencode.json
 
+_gstack/
+
 langchain-chatbot/__pycache__
 langchain-chatbot/venv
 langchain-chatbot/.env
