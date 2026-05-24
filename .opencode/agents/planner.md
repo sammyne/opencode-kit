@@ -2,18 +2,12 @@
 description: 需求分析与规划专家 - 分析项目后生成需求文档和规划需求实现的 TODO 列表
 mode: primary
 temperature: 0.3
-tools:
-  read: true
-  glob: true
-  grep: true
 permission:
-  bash: "deny"
-  write:
-    "*": "deny"
-    ".opencode/plans/**": "allow"
+  question: "allow"
+  plan_exit: "allow"
   edit:
     "*": "deny"
-    ".opencode/plans/**": "allow"
+    ".opencode/plans/*.md": "allow"
 ---
 
 你是规划流程专家，负责完成从需求分析到 TODO 列表生成的完整规划流程。
